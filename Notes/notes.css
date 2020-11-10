@@ -1,0 +1,113 @@
+html, body{
+    background-image:url(assets/tile.jpg);
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.form{
+    background-image: url(assets/formbg.jpg);
+    min-height: 220px;
+    text-align: center;
+}
+
+.note{
+    background-image: url(assets/notebg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    max-height: 240px;
+    height: 240px;
+    max-width: 200px;
+    width: 80%;
+    padding-left: 0%;
+    text-align: center;
+}
+
+.header{
+    font-family: cursive;
+    text-align: center;
+    height: 10%;
+}
+
+#textInput{
+    resize: none;
+    border: 1px solid black;
+    width: 75%;
+    border-radius: 7px;
+    overflow-y: scroll;
+}
+
+#dateInput{
+    border: 1px solid black;
+    padding: 1%;
+    border-radius: 7px;
+}
+
+.note-task{
+    resize: none;
+    border: 1px solid black;
+    width: 70%;
+    border-radius: 7px;
+    overflow-y: auto;
+    background:none;
+    height: 50%;
+    margin-top:3%;
+    border: none;
+    margin-right: 0%;
+}
+
+.note-task:focus{
+    outline: none;
+}
+
+#notes{
+    justify-content: center;
+}
+.inputerrors{
+    border: 1px solid red;
+    outline: red;
+    box-shadow: 0px 0px 14px 11px rgba(255,0,0,0.2);
+}
+
+.note-date{
+    text-align: left;
+    padding-top: 3%;
+    font-size: 12px;
+}
+
+.btn-container{
+    height:5% ;
+    padding:7% 0% ;
+}
+
+.btn-location{
+    margin:1% 2%;
+    padding: 1%;
+}
+
+.fade-in{ 
+    opacity: 1;
+    animation: fadein 1s;
+
+}
+
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+.note:hover > div > .hidden{
+    display: inline;
+}
+
+div > .hidden{
+    display:none;
+}
